@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Featured Graphic Layout</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="crossword.js"></script>
+
+
+</head>
+
+<body>
+    <h1 id="title">Coding Crossword</h1>
+    <div id = "crosswordTable">
+   
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <i class="input1">1</i>
+        <input onkeydown="letterGuess1()" class="buttonWhite" type="text" maxLength="1" id="letter1"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />        
+        <input class="buttonBlack" type="text" disabled="disabled" />   
+     </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess2()" class="buttonWhite" type="text" maxLength="1" id="letter2"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess3()" class="buttonWhite" type="text" maxLength="1" id="letter3"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess4()" class="buttonWhite" type="text" maxLength="1" id="letter4"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <i class="input2">2</i>
+        <input onkeydown="letterGuess5()" class="buttonWhite" type="text" maxLength="1" id="letter5"/>
+        <input onkeydown="letterGuess6()" class="buttonWhite" type="text" maxLength="1" id="letter6"/>
+        <input onkeydown="letterGuess7()" class="buttonWhite" type="text" maxLength="1" id="letter7"/>
+        <input onkeydown="letterGuess8()" class="buttonWhite" type="text" maxLength="1" id="letter8"/>
+        <input onkeydown="letterGuess9()" class="buttonWhite" type="text" maxLength="1" id="letter9"/>
+        <i class="input3">3</i>
+        <input onkeydown="letterGuess10()" class="buttonWhite" type="text" maxLength="1" id="letter10"/>
+        <input onkeydown="letterGuess11()" class="buttonWhite" type="text" maxLength="1" id="letter11"/>
+        <input onkeydown="letterGuess12()" class="buttonWhite" type="text" maxLength="1" id="letter12"/>
+        <input onkeydown="letterGuess13()" class="buttonWhite" type="text" maxLength="1" id="letter13"/>
+        <input onkeydown="letterGuess14()" class="buttonWhite" type="text" maxLength="1" id="letter14"/>
+    </div>
+    <div id="row">
+        <i class="input4">4</i>
+        <i class="input5">5</i>
+        <input onkeydown="letterGuess15()" class="buttonWhite" type="text" maxLength="1" id="letter15"/>
+        <input onkeydown="letterGuess16()" class="buttonWhite" type="text" maxLength="1" id="letter16"/>
+        <input onkeydown="letterGuess17()" class="buttonWhite" type="text" maxLength="1" id="letter17"/>
+        <input onkeydown="letterGuess18()" class="buttonWhite" type="text" maxLength="1" id="letter18"/>
+        <input onkeydown="letterGuess19()" class="buttonWhite" type="text" maxLength="1" id="letter19"/>
+        <input onkeydown="letterGuess20()" class="buttonWhite" type="text" maxLength="1" id="letter20"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess21()" class="buttonWhite" type="text" maxLength="1" id="letter21"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess22()" class="buttonWhite" type="text" maxLength="1" id="letter22"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess23()" class="buttonWhite" type="text" maxLength="1" id="letter23"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess24()" class="buttonWhite" type="text" maxLength="1" id="letter24"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input6">6</i>
+        <i class="input7">7</i>
+        <i class="input8">8</i>
+        <i class="input9">9</i>
+        <i class="input10">10</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess25()" class="buttonWhite" type="text" maxLength="1" id="letter25"/>
+        <input onkeydown="letterGuess26()" class="buttonWhite" type="text" maxLength="1" id="letter26"/>
+        <input onkeydown="letterGuess27()" class="buttonWhite" type="text" maxLength="1" id="letter27"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess28()" class="buttonWhite" type="text" maxLength="1" id="letter28"/>
+        <input onkeydown="letterGuess29()" class="buttonWhite" type="text" maxLength="1" id="letter29"/>
+        <input onkeydown="letterGuess30()" class="buttonWhite" type="text" maxLength="1" id="letter30"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess31()" class="buttonWhite" type="text" maxLength="1" id="letter31"/>
+        <input onkeydown="letterGuess32()" class="buttonWhite" type="text" maxLength="1" id="letter32"/>
+        <input onkeydown="letterGuess33()" class="buttonWhite" type="text" maxLength="1" id="letter33"/>
+        <input onkeydown="letterGuess34()" class="buttonWhite" type="text" maxLength="1" id="letter34"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input11">11</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess35()" class="buttonWhite" type="text" maxLength="1" id="letter35"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess36()" class="buttonWhite" type="text" maxLength="1" id="letter36"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess37()" class="buttonWhite" type="text" maxLength="1" id="letter37"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess38()" class="buttonWhite" type="text" maxLength="1" id="letter38"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input12">12</i>
+        <i class="input13">13</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess39()" class="buttonWhite" type="text" maxLength="1" id="letter39"/>
+        <input onkeydown="letterGuess40()" class="buttonWhite" type="text" maxLength="1" id="letter40"/>
+        <input onkeydown="letterGuess41()" class="buttonWhite" type="text" maxLength="1" id="letter41"/>
+        <input onkeydown="letterGuess42()" class="buttonWhite" type="text" maxLength="1" id="letter42"/>
+        <input onkeydown="letterGuess43()" class="buttonWhite" type="text" maxLength="1" id="letter43"/>
+        <input onkeydown="letterGuess44()" class="buttonWhite" type="text" maxLength="1" id="letter44"/>
+        <input onkeydown="letterGuess45()" class="buttonWhite" type="text" maxLength="1" id="letter45"/>
+        <input onkeydown="letterGuess46()" class="buttonWhite" type="text" maxLength="1" id="letter46"/>
+        <input onkeydown="letterGuess47()" class="buttonWhite" type="text" maxLength="1" id="letter47"/>
+        <input onkeydown="letterGuess48()" class="buttonWhite" type="text" maxLength="1" id="letter48"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess49()" class="buttonWhite" type="text" maxLength="1" id="letter49"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess50()" class="buttonWhite" type="text" maxLength="1" id="letter50"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input14">14</i>
+        <i class="input15">15</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess51()" class="buttonWhite" type="text" maxLength="1" id="letter51"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess52()" class="buttonWhite" type="text" maxLength="1" id="letter52"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess53()" class="buttonWhite" type="text" maxLength="1" id="letter53"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess54()" class="buttonWhite" type="text" maxLength="1" id="letter54"/>
+        <input onkeydown="letterGuess55()" class="buttonWhite" type="text" maxLength="1" id="letter55"/>
+        <input onkeydown="letterGuess56()" class="buttonWhite" type="text" maxLength="1" id="letter56"/>
+        <input onkeydown="letterGuess57()" class="buttonWhite" type="text" maxLength="1" id="letter57"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess58()" class="buttonWhite" type="text" maxLength="1" id="letter58"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess59()" class="buttonWhite" type="text" maxLength="1" id="letter59"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess60()" class="buttonWhite" type="text" maxLength="1" id="letter60"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess61()" class="buttonWhite" type="text" maxLength="1" id="letter61"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess62()" class="buttonWhite" type="text" maxLength="1" id="letter62"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input16">16</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess63()" class="buttonWhite" type="text" maxLength="1" id="letter63"/>
+        <input onkeydown="letterGuess64()" class="buttonWhite" type="text" maxLength="1" id="letter64"/>
+        <input onkeydown="letterGuess65()" class="buttonWhite" type="text" maxLength="1" id="letter65"/>
+        <input onkeydown="letterGuess66()" class="buttonWhite" type="text" maxLength="1" id="letter66"/>
+        <input onkeydown="letterGuess67()" class="buttonWhite" type="text" maxLength="1" id="letter67"/>
+        <input onkeydown="letterGuess68()" class="buttonWhite" type="text" maxLength="1" id="letter68"/>
+        <input onkeydown="letterGuess69()" class="buttonWhite" type="text" maxLength="1" id="letter69"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess70()" class="buttonWhite" type="text" maxLength="1" id="letter70"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess71()" class="buttonWhite" type="text" maxLength="1" id="letter71"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess72()" class="buttonWhite" type="text" maxLength="1" id="letter72"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input17">17</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess73()" class="buttonWhite" type="text" maxLength="1" id="letter73"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input onkeydown="letterGuess74()" class="buttonWhite" type="text" maxLength="1" id="letter74"/>
+        <input onkeydown="letterGuess75()" class="buttonWhite" type="text" maxLength="1" id="letter75"/>
+        <input onkeydown="letterGuess76()" class="buttonWhite" type="text" maxLength="1" id="letter76"/>
+        <input onkeydown="letterGuess77()" class="buttonWhite" type="text" maxLength="1" id="letter77"/>
+        <input onkeydown="letterGuess78()" class="buttonWhite" type="text" maxLength="1" id="letter78"/>
+        <input onkeydown="letterGuess79()" class="buttonWhite" type="text" maxLength="1" id="letter79"/>
+        <input onkeydown="letterGuess80()" class="buttonWhite" type="text" maxLength="1" id="letter80"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess81()" class="buttonWhite" type="text" maxLength="1" id="letter81"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input onkeydown="letterGuess82()" class="buttonWhite" type="text" maxLength="1" id="letter82"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input onkeydown="letterGuess83()" class="buttonWhite" type="text" maxLength="1" id="letter83"/>
+        <input class="buttonBlack" type="text" disabled="disabled"/>
+        <input  class="buttonBlack" type="text" disabled="disabled"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input18">18</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess84()" class="buttonWhite" type="text" maxLength="1" id="letter84"/>
+        <input onkeydown="letterGuess85()" class="buttonWhite" type="text" maxLength="1" id="letter85"/>
+        <input onkeydown="letterGuess86()" class="buttonWhite" type="text" maxLength="1" id="letter86"/>
+        <input onkeydown="letterGuess87()" class="buttonWhite" type="text" maxLength="1" id="letter87"/>
+        <input onkeydown="letterGuess88()" class="buttonWhite" type="text" maxLength="1" id="letter88"/>
+        <input onkeydown="letterGuess89()" class="buttonWhite" type="text" maxLength="1" id="letter89"/>
+        <input onkeydown="letterGuess90()" class="buttonWhite" type="text" maxLength="1" id="letter90"/>
+        <input onkeydown="letterGuess91()" class="buttonWhite" type="text" maxLength="1" id="letter91"/>
+        <input onkeydown="letterGuess92()" class="buttonWhite" type="text" maxLength="1" id="letter92"/>
+        <input onkeydown="letterGuess93()" class="buttonWhite" type="text" maxLength="1" id="letter93"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess94()" class="buttonWhite" type="text" maxLength="1" id="letter94"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess95()" class="buttonWhite" type="text" maxLength="1" id="letter95"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input19">19</i>
+        <i class="input20">20</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess96()" class="buttonWhite" type="text" maxLength="1" id="letter96"/>
+        <input onkeydown="letterGuess97()" class="buttonWhite" type="text" maxLength="1" id="letter97"/>
+        <input onkeydown="letterGuess98()" class="buttonWhite" type="text" maxLength="1" id="letter98"/>
+        <input onkeydown="letterGuess99()" class="buttonWhite" type="text" maxLength="1" id="letter99"/>
+        <input onkeydown="letterGuess100()" class="buttonWhite" type="text" maxLength="1" id="letter100"/>
+        <input onkeydown="letterGuess101()" class="buttonWhite" type="text" maxLength="1" id="letter101"/>
+        <input onkeydown="letterGuess102()" class="buttonWhite" type="text" maxLength="1" id="letter102"/>
+        <input onkeydown="letterGuess103()" class="buttonWhite" type="text" maxLength="1" id="letter103"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess104()" class="buttonWhite" type="text" maxLength="1" id="letter104"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />        
+        <input class="buttonBlack" type="text" disabled="disabled" />        
+        <input onkeydown="letterGuess105()" class="buttonWhite" type="text" maxLength="1" id="letter105"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess106()" class="buttonWhite" type="text" maxLength="1" id="letter106"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <i class="input21">21</i>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />       
+        <input onkeydown="letterGuess107()" class="buttonWhite" type="text" maxLength="1" id="letter107"/>
+        <input onkeydown="letterGuess108()" class="buttonWhite" type="text" maxLength="1" id="letter108"/>
+        <input onkeydown="letterGuess109()" class="buttonWhite" type="text" maxLength="1" id="letter109"/>
+        <input onkeydown="letterGuess110()" class="buttonWhite" type="text" maxLength="1" id="letter110"/>
+        <input onkeydown="letterGuess111()" class="buttonWhite" type="text" maxLength="1" id="letter111"/>
+        <input onkeydown="letterGuess112()" class="buttonWhite" type="text" maxLength="1" id="letter112"/>
+        <input onkeydown="letterGuess113()" class="buttonWhite" type="text" maxLength="1" id="letter113"/>
+        <input onkeydown="letterGuess114()" class="buttonWhite" type="text" maxLength="1" id="letter114"/>
+        <input onkeydown="letterGuess115()" class="buttonWhite" type="text" maxLength="1" id="letter115"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />        
+        <input class="buttonBlack" type="text" disabled="disabled" />     
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess116()" class="buttonWhite" type="text" maxLength="1" id="letter116"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+    <div id="row">
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />        
+        <input class="buttonBlack" type="text" disabled="disabled" />        
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input class="buttonBlack" type="text" disabled="disabled" />
+        <input onkeydown="letterGuess117()" class="buttonWhite" type="text" maxLength="1" id="letter117"/>
+        <input class="buttonBlack" type="text" disabled="disabled" />
+    </div>
+ 
+</div>
+<div id="instructions">Enter a lowercase letter and hit enter...if you're entry is correct the background color will change from red to green.   Good luck!</div>
+
+<div id="clues">
+    <div id="clueContainer">
+        <h2>Across</h2>
+    <div id="across">
+        <div class="numbers">
+            <p>2.</p>
+            <p>4.</p>
+            <p>6.</p>
+            <p>7.</p>
+            <p>9.</p>
+            <p>12.</p>
+            <p>14.</p>
+            <p>16.</p>
+            <p>17.</p>
+            <p>18.</p>
+            <p>19.</p>
+            <p>21.</p>
+        </div>
+        <div class="clues">
+            <p>the body of a loop is enclosed by this character</p>
+            <p>command to retrieve a record in a database</p>
+            <p>company behind the creation of Java</p>
+            <p>rules used to change a style property</p>
+            <p>a Python control flow statement type</p>
+            <p>handles the request/response lifecycle</p>
+            <p>a dynamic data structure</p>
+            <p>the father of Java</p>           
+            <p>true</p>
+            <p>loosely typed programming language</p>
+            <p>converts program into machine language</p>
+            <p>a basic data type in Java</p>
+        </div>
+    </div>
+    </div>
+    <div id="clueContainer">
+        <h2>Down</h2>
+    <div id="down">
+        <div class="numbers">
+            <p>1.</p>
+            <p>3.</p>
+            <p>5.</p>
+            <p>8.</p>
+            <p>10.</p>
+            <p>11.</p>
+            <p>13.</p>
+            <p>15.</p>
+            <p>20.</p>
+        </div>
+        <div class="clues">
+            <p>%</p>
+            <p>8 bits</p>
+            <p>declare a constant in javascript</p>
+            <p>server-side framework used to develop web apps</p>
+            <p>programming language introduced by IBM in 1957</p>
+            <p>having many forms...an OOP principle</p>
+            <p>the original name for Java</p>
+            <p>command to add a record in a database</p>
+            <p>command to end a loop early</p>
+        </div>
+    </div>
+    </div>
+   
+
+</div>
+    
+
+</body>
+
+</html>
